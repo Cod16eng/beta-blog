@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'materialize-sass', '~> 1.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
-
+gem 'material_icons', '~> 2.2', '>= 2.2.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

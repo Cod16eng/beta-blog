@@ -1,3 +1,14 @@
 <h2><%= @article.title %></h2>
 
 <p><%= @article.desc %></p>
+
+<div class="row">
+  <div class="col s6">
+    <%= link_to '<i class="material-icons">arrow_back</i>'.html_safe, articles_path, class:'btn-floating waves-effect waves-light grey btn tooltipped',
+    "data-toggle" => "tooltip", "data-position"=>"bottom", 'data-tooltip'=>"Back to Articles" %>
+  </div>
+  <div class="col s6">
+    <%= link_to '<i class="material-icons">create</i>'.html_safe, edit_article_path(@article), class:'btn-floating waves-effect waves-light green btntooltipped',
+    "data-toggle" => "tooltip", "data-position"=>"bottom", 'data-tooltip'=>"Edit Article" %>
+  </div>
+</div>
