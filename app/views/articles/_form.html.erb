@@ -1,0 +1,23 @@
+<% if @article.errors.any? %>
+<h3>Errors</h3>
+  <ul class="collection">
+    <% @article.errors.full_messages.each do |msg| %>
+      <li class="collection-item red white-text"><%= msg %></li>
+  <% end %>
+  </ul>
+<% end %>
+<br>
+<%= form_for @article do |f| %>
+  <div class="input-field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, placeholder: "Tiltle" %>
+  </div>
+  <div class="input-field">
+    <%= f.label :desc %><br>
+    <%= f.text_area :desc, id:'textarea1', placeholder: "Description" , class:'materialize-textarea' %>
+  </div>
+  <div class="input-field right">
+    <%= f.submit 'Create Article', class: 'waves-effect waves-light btn-small' %>  <br>
+    </div>
+    
+<% end %>
