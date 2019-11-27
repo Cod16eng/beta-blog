@@ -25,6 +25,8 @@ import 'materialize-css/dist/js/materialize'
 
 
 $(document).on('turbolinks:load', function() {
-    $('#textarea1').trigger('autoresize');
+  $('#textarea1').trigger('autoresize');
     $('a[data-toggle="tooltip"]').tooltip();
+      
+
   });
