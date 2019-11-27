@@ -20,7 +20,7 @@
                 <p><%= art.desc.truncate_words(20) %></p>
               </div>
               <div class="row">
-                <span class="card-action col s6 left">Created by: <%= art.user.username %>, <%=time_ago_in_words(art.created_at)%> ago</span>
+                <span class="card-action col s6 left">Created by: <%= art.user.username if art.user %>, <%=time_ago_in_words(art.created_at)%> ago</span>
                 <div class="card-action col s6 right">
                   <%= link_to '<i class="material-icons">create</i>'.html_safe, edit_article_path(art), class:'btn-floating waves-effect waves-light green btn right' %>
                   <%= link_to '<i class="material-icons">visibility</i>'.html_safe, article_path(art), class:'btn-floating waves-effect waves-light blue btn right' %>
