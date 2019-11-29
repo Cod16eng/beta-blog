@@ -15,3 +15,13 @@
  *= require_self
  */
 @import "materialize";
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+.btn-sp {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+h2{
+  font-family: 'Heebo', sans-serif !important;
+}
